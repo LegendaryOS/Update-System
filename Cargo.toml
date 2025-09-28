@@ -1,0 +1,10 @@
+[package]
+name = "update-system"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "update-system"
+path = "src/main.rs"
+
+[dependencies]
