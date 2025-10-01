@@ -4,13 +4,13 @@ use std::time::Duration;
 
 fn main() {
     // Run sudo zypper update
-    println!("[INFO] Running zypper update...");
+    println!("[INFO] Running legendary update...");
     let zypper_status = Command::new("sudo")
-    .args(&["zypper", "update"])
+    .args(&["legendary", "update"])
     .status()
-    .expect("Failed to execute zypper update");
+    .expect("Failed to execute legendary update");
     if !zypper_status.success() {
-        eprintln!("[ERROR] zypper update failed");
+        eprintln!("[ERROR] legendary update failed");
         std::process::exit(1);
     }
 
